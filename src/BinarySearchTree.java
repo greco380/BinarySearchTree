@@ -27,6 +27,9 @@ class BST {
 		else if(value > node.data) {
 			node.right = insert(node.right, value);
 		}
+		else if (value == node.data) {
+			return null;
+		}
 		
 		return node;
 		
